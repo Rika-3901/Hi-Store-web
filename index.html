@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi-Store</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar-backdrop"></div>
+      <nav class="sidebar">
+        <div class="brand-logo">
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <p class="brand-name">Hi-Store</p>
+        </div>
+
+        <ul class="navigation">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li class="current">
+            <a href="#">
+              <i class="fa-solid fa-gamepad"></i>
+              Games
+            </a>
+            <i class="pre"></i>
+            <i class="end"></i>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-table-cells-large"></i>
+              Apps
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Purchase
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-folder"></i>
+              Collection
+            </a>
+          </li>
+
+          <div style="flex: 1"></div>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              Helps &amp; feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+
+        <a href="" class="promotional">
+          <div
+            class="img"
+            style="background: url('images/games/free-fire.jpeg')"
+          ></div>
+          <div class="caption">
+            <div style="flex: 1">
+              <p class="title">Free Fire Diamond</p>
+              <span class="subtitle">Discount 5%</span>
+            </div>
+            <i class="fas fa-chevron-circle-right"></i>
+          </div>
+        </a>
+
+        <p class="footer">
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a>
+        </p>
+
+        <i class="side-pre"></i>
+        <i class="side-end"></i>
+      </nav>
+      <main>
+        <div class="header-spacing"></div>
+        <header class="header">
+          <div class="search-bar">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search your games"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div class="header-divider"></div>
+
+          <div class="header-actions">
+            <a href="#" class="icon-button">
+              <i class="fa-solid fa-sliders"></i>
+            </a>
+
+            <a href="#" class="icon-button">
+              <i class="fa-solid fa-bell"></i>
+              <span class="badge">69</span>
+            </a>
+
+            <a href="#" class="icon-button" id="btn-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+
+            <p class="user-name">Davidson</p>
+            <div
+              class="user-picture"
+              style="
+                background: url('images/photo-1539571696357-5a69c17a67c6.jpg');
+              "
+            ></div>
+          </div>
+        </header>
+
+        <div class="content">
+          <section id="popular">
+            <h4 class="title">Popular Games</h4>
+
+            <div class="h-scrolls">
+              <ul>
+                <li class="color-red">
+                  <a href="#">
+                    <div class="card">
+                      <img
+                        src="images/games/coc.png"
+                        alt="game-logo"
+                        class="game-logo"
+                      />
+                      <img
+                        src="images/games/coc_banner.png"
+                        alt="game-banner"
+                        class="game-banner"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div class="info">
+                        <p class="title">Clash of Clans</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.5</span>
+                        </div>
+                      </div>
+                      <span class="badge">GET</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-yellow">
+                  <a href="#">
+                    <div class="card">
+                      <img
+                        src="images/games/mario.png"
+                        alt="game-logo"
+                        class="game-logo"
+                      />
+                      <img
+                        src="images/games/mario_banner.png"
+                        alt="game-banner"
+                        class="game-banner"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div class="info">
+                        <p class="title">Super Mario</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.5</span>
+                        </div>
+                      </div>
+                      <span class="badge">GET</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-purple">
+                  <a href="#">
+                    <div class="card">
+                      <img
+                        src="images/games/clash_royale.png"
+                        alt="game-logo"
+                        class="game-logo"
+                      />
+                      <img
+                        src="images/games/clash_royale_banner.png"
+                        alt="game-banner"
+                        class="game-banner"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div class="info">
+                        <p class="title">Clash Royale</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.6</span>
+                        </div>
+                      </div>
+                      <span class="badge">GET</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-blue">
+                  <a href="#">
+                    <div class="card">
+                      <img
+                        src="images/games/sonic.png"
+                        alt="game-logo"
+                        class="game-logo"
+                      />
+                      <img
+                        src="images/games/sonic_banner.png"
+                        alt="game-banner"
+                        class="game-banner"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div class="info">
+                        <p class="title">Sonic The Hotdog</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.8</span>
+                        </div>
+                      </div>
+                      <span class="badge">GET</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="recommended" style="margin-top: 48px">
+            <h4 class="title">Recommended Games</h4>
+
+            <div class="h-scrolls alt">
+              <ul>
+                <li class="color-cyan">
+                  <a href="#">
+                    <div
+                      class="card"
+                      style="background: url('images/games/angry-birds-2.jpg')"
+                    >
+                      <img
+                        src="images/play-button.png"
+                        alt="play-video"
+                        class="play-btn"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div
+                        class="game-icon"
+                        style="
+                          background: url('images/games/angry-birds-2.jpg');
+                        "
+                      ></div>
+                      <div class="info">
+                        <p class="title">Angry Birds 2</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.5</span>
+                          <span class="game-size">238 MB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-cyan">
+                  <a href="#">
+                    <div
+                      class="card"
+                      style="background: url('images/games/rise_kingdoms.jpg')"
+                    >
+                      <img
+                        src="images/play-button.png"
+                        alt="play-video"
+                        class="play-btn"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div
+                        class="game-icon"
+                        style="
+                          background: url('images/games/rise_kingdoms.jpg');
+                        "
+                      ></div>
+                      <div class="info">
+                        <p class="title">Rise of Kingdoms</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">3.3</span>
+                          <span class="game-size">856 MB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-cyan">
+                  <a href="#">
+                    <div
+                      class="card"
+                      style="background: url('images/games/pokemon_go.png')"
+                    >
+                      <img
+                        src="images/play-button.png"
+                        alt="play-video"
+                        class="play-btn"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div
+                        class="game-icon"
+                        style="background: url('images/games/pokemon_go.png')"
+                      ></div>
+                      <div class="info">
+                        <p class="title">Pokemon Go</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">4.0</span>
+                          <span class="game-size">100 MB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="color-cyan">
+                  <a href="#">
+                    <div
+                      class="card"
+                      style="background: url('images/games/genshin-impact.jpg')"
+                    >
+                      <img
+                        src="images/play-button.png"
+                        alt="play-video"
+                        class="play-btn"
+                      />
+                    </div>
+                    <div class="detail">
+                      <div
+                        class="game-icon"
+                        style="
+                          background: url('images/games/genshin-impact.jpg');
+                        "
+                      ></div>
+                      <div class="info">
+                        <p class="title">Gacha Impact</p>
+                        <div class="metadata">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <span class="rating">1.1</span>
+                          <span class="game-size">9999999 MB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/sly.min.js"></script>
+
+    <script>
+      const sidebar = $(".sidebar");
+      const sidebarBackdrop = $(".sidebar-backdrop");
+
+      const onNavItemClick = (element) => {
+        $(".navigation li").each((_, elem) => {
+          const isCurrent = elem === element;
+          const el = $(elem);
+          el.toggleClass("current", isCurrent);
+
+          if (isCurrent) {
+            el.append('<i class="pre"></i><i class="end"></i>');
+          } else {
+            el.remove("i.pre");
+            el.remove("i.end");
+          }
+        });
+      };
+
+      $(document).ready(() => {
+        $(".navigation li").click(function (e) {
+          e.preventDefault();
+          onNavItemClick(this);
+        });
+
+        $(".h-scrolls").sly({
+          horizontal: 1,
+          itemNav: "basic",
+          mouseDragging: 1,
+          touchDragging: 1,
+          releaseSwing: 1,
+          startAt: 0,
+          speed: 300,
+          elasticBounds: 1,
+          easing: "easeOutExpo",
+        });
+
+        const toggleSidebar = (toggle) => {
+          sidebar.toggleClass("active", toggle);
+          sidebarBackdrop.toggleClass("active", toggle);
+        };
+
+        $("#btn-menu").click(() => {
+          const enabled = !sidebar.hasClass("active");
+          toggleSidebar(enabled);
+        });
+
+        sidebarBackdrop.click(() => {
+          toggleSidebar(false);
+        });
+      });
+    </script>
+  </body>
+</html>
